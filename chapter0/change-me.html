@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <script language="javascript">
+      function changeText() {
+        RED_CAR = "I drive a red car";
+        GREEN_HOUSE = "I live in a green house";
+        $p = document.getElementById("text");
+        $text = $p.innerHTML
+        if($text == RED_CAR) {
+          $p.innerHTML = GREEN_HOUSE;
+        } else {
+          $p.innerHTML = RED_CAR;
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>
+      Change text function demo.
+    </h1>
+    <p id="text">I drive a red car</p>
+    <button type="button" onclick="changeText()">Change Me!</button>
+  </body>
+</html>
